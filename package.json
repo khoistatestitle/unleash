@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:unleash/unleash.git"
+    "url": "git+ssh://git@github.com/unleash/unleash.git"
   },
   "bugs": {
     "url": "https://github.com/unleash/unleash/issues"
@@ -29,10 +29,10 @@
   "license": "Apache-2.0",
   "main": "./lib/server-impl.js",
   "bin": {
-    "unleash": "./bin/unleash.js"
+    "unleash": "bin/unleash.js"
   },
   "scripts": {
-    "start": "node examples/auth0-auth-unleash.js",
+    "start": "node server.js",
     "start:google": "node examples/google-auth-unleash.js",
     "start:dev": "NODE_ENV=development supervisor --ignore ./node_modules/,website server-dev.js",
     "start:dev:pg": "pg_virtualenv npm run start:dev:pg-chain",
@@ -107,8 +107,8 @@
     "lolex": "^6.0.0",
     "nyc": "^15.1.0",
     "passport": "^0.4.1",
-    "passport-google-auth": "^1.0.2",
     "passport-auth0": "^1.3.3",
+    "passport-google-auth": "^1.0.2",
     "prettier": "^1.19.1",
     "proxyquire": "^2.1.3",
     "superagent": "^5.1.0",
@@ -152,5 +152,13 @@
         }
       }
     ]
-  }
+  },
+  "homepage": "https://github.com/unleash/unleash#readme",
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": ""
 }
