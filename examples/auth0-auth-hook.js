@@ -2,7 +2,8 @@
 
 'use strict';
 
-const passport = require('@passport-next/passport');
+// const passport = require('@passport-next/passport');
+const passport = require('passport');
 const Auth0Strategy = require('passport-auth0').Strategy;
 
 // const  { User, AuthenticationRequired } = require('unleash-server');

@@ -32,7 +32,7 @@
     "unleash": "bin/unleash.js"
   },
   "scripts": {
-    "start": "node examples/google-auth-unleash.js",
+    "start": "node examples/auth0-auth-unleash.js",
     "start:google": "node examples/google-auth-unleash.js",
     "start:dev": "NODE_ENV=development supervisor --ignore ./node_modules/,website server-dev.js",
     "start:dev:pg": "pg_virtualenv npm run start:dev:pg-chain",
